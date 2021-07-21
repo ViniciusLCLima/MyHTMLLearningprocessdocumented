@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title> Learning HTML and CSS </title>
+	</head>
+	<body>
+		<h1>Text</h1>
+		<h2>Headings</h2>
+		<p>Headings are made by putting an H letter at the start of a tag, putting the correspont number of the type of heading you want and then putting the heading content and then closing it with its closing tag. </p>
+		<h1> This an H1, it is the greater of the h# elements </h1>
+		<h2> This is an H2, it is smaller than the h1. According to the book, can be used as a sub topic of the h1</h1>
+		<h3> This is an h3, desined to be a sub topic of the h2, and so on with h4, h5 and 6</h3>
+  </body>
+</html>
