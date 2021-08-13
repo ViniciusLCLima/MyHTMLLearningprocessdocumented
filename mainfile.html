@@ -116,6 +116,9 @@ DOCTYPE html>
 		<h2>Links that open in a new window</h2>
 		<p>To make a link open in a new window, we have to add a target attribute to the opening tag of its &lt;a&gt element, with its value being "_blank".</p>
 		<p>E.g., <a href=https://google.com target="_blank">Click to go to google! (opens in a new window)</a></p>
+		<h2>Links to other parts in the same webpage</h2>
+		<p>To do it, the first thing we got to do is to add an ID attribute to every element we want a link to send us to. The value of the ID attribute must start with an underscore or a letter(not any other type of character) and two different elements should not have the same ID attribute values. Like:id="element1"</p>
+		<p>After that, we just need to create an &lt;a&gt element with an href attribute, with its value starting with a # followed by the ID attribute value of the element we want that link to send us.</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
