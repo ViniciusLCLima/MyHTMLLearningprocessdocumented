@@ -157,6 +157,26 @@ DOCTYPE html>
 		Cannes, France<br />
 		11-22 May 2011</p>
 		<hr />
+		<h1>Images</h1>
+		<h2>How to add it</h2>
+		<p>To add images, we got to make an image embed element, it's made just of one tag with its first characters being "img", and its last characters are a space and a forward slash. To tell the browser where is the image, we use the attribute src, with its value being a URL. It is also advisable to use an alt attribute to describe with accuracy what is in that image, this is going to be used by screen readers(for people with visual impairments) and search engines. You can also add the title attribute to give more information about it, and the width and height to define its size in pixels, these can be used for the browser to take the image size into account when rendering the page. Like:&lt;img src="URL" alt="image description" width="100" height="100" /&gt;</p>
+		<p>Eg:<br />
+		<img src="images/image.png" alt="Representation of an image" height="120" width="120" /></p>
+		<h2>The use of the align attribute with it(old code)</h2>
+		<img src="images/image.png" alt="Representation of an image" height="120" width="120" align="left"/>
+		<p>The align attribute was usually used before HTML5 to indicate how the surrounding elements of an image should align with it, even though, according to the book, it's not recommended anymore. The way it works is, if we put a horizontal value in it(left or right), the image is going to be aligned at that side of the block element(which is an element that starts in a new line) it could be in, and any other thing that could fit along its length. Like we did here.</p>
+		<br />
+		<br />
+		<br />
+		<p><img src="images/image.png" alt="Representation of an image" height="120" width="120" align="middle"/>If we put a vertical value in it on the other hand(middle, top or bottom), it will only align the first line of the block element it's in. Like here.</p>
+		<h2>Associating an image with a caption</h2>
+		<p>It is also possible to associate an image with a caption, to do this we got to create a &lt;figure&gt element, which is made of an opening tag, a closing tag and elements inside it, with the first characters of the tags being "figure". The elements inside must be one or more image embed elements, which is going to be the image/images, and a &lt;figcaption element&gt;, which is going to be the caption and which is made of an opening tag, a closing tag and a content, with the first characters of the tags being "figcaption".</p>
+		<p>Like:
+			<figure>
+				<img src="images/image.png" alt="representation of an image" height="120" width="120" />
+				<figcaption>This caption is associated with the image above using the &lt;figure&gt; element</figcaption>
+			</figure>
+		</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
