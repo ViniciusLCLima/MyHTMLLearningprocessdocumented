@@ -188,6 +188,34 @@ DOCTYPE html>
 		<img src="images/Vinicius_s Recipes/Morerecipes1.jpg" alt="Four pastels over a table" title="see this delicious pastel recipe!" width="185" height="144" />
 		<img src="images/Vinicius_s Recipes/Morerecipes2.jpg" alt="A chunk of chocolate cake" title="an amazing chocolate cake to sweeten your day!" width="185" height="144" />
 		<img src="images/Vinicius_s Recipes/Morerecipes3.jpg" alt="A pudding with blueberries" title="A healthy pudding with blueberries!" width="185" height="144" />
+                <hr />
+		<h1>Tables</h1>
+		<h2>Basic table structure</h2>
+		<p>To make it I got to create a table element, which is made of an opening tag, a closing tag and elements between them, with the first characters of the tags being "table". A table in HTML is made raw by raw, so now we need to add a table raw element to it, which is the same way, but with the first characters of the tags being "tr"(stands for table raw). Now we got to add the cells in it, which can be made of a &lt;th&gt; element, for a table heading, or a table data cell element. Both are made of an opening tag, a closing tag and a content, with the difference that the first characters of the first will be "th", while the first characters of the second will be "td".</p>
+		<p>Like:
+		<table>
+		        <tr>
+		                <th></th>
+		                <th scope="col">column heading</th>
+			        <th scope="col">column heading</th>
+			        <th scope="col">column heading</th>
+			</tr>
+			<tr>
+				<th scope="row">row heading</th>
+				<td>table data cell</td>
+				<td>table data cell</td>
+				<td>table data cell<=/td>
+			</tr>
+			<tr>
+				<th scope="row">row heading</th>
+				<td>table data cell</td>
+				<td>table data cell</td>
+				<td>table data cell</td>
+			</tr>
+		</table>
+		</p>
+		<h2>The scope attribute</h2>
+		<p>The scope attribute can be used with the &lt;th&gt element to indicate if a heading is for a row or a column, if the heading is for a row we put "row" in its value, if it is for a column, we put "col" in its value. It was done in the previous example.</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
