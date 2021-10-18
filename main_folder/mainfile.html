@@ -243,6 +243,36 @@ DOCTYPE html>
 		</p>
 		<h2>Table Sectioning</h2>
 		<p>The elements &lt;thead&gt, &lt;tbody&gt and &lt;tfoot&gt, allows us to separate, and determine the different sections of the table. It also helps screen readers and us to stylize these sections more easily using CSS, according to the book. It was used in the previous example.</p>
+		<h2>Other attributes(older code).</h2>
+		<p>Some attributes were used in older codes but are not recommended to be used anymore. These are:
+			<ul>
+				<li>the bgcolor and the border: both could be used in the opening tags of a table element or an element that forms a cell, the first to change the color of its element, with its value being a hex code, and the second to change the size of the borders of its element;</li>
+				<li>the cellpadding and the cellspacing: could be used in the opening tag of the table element, the first to add space inside the cells, and the second to determine the space between it</li>
+				<li>the width: can be used inside an opening tag of a table element to determine the table width, or inside any element that forms a cell to determine that cell width, it was only needed to be used in one cell for each column, cause it would determine the size of all cells of that column.</li>
+			</ul>
+		<p>All the sizes were in pixels.</p>
+		<p>Example of the use of those attributes:
+			<table cellpadding="1" cellspacing="1" border="1">
+				<tr>
+					<th width="100"></th>
+					<th bgcolor="fgfgfg">Monday</th>
+					<th bgcolor="fgfgfg">Tuesday</th>
+					<th bgcolor="fgfgfg">Wednesday</th>
+				</tr>
+				<tr>
+					<th bgcolor="fgfgfg">Wash the dishes</th>
+					<td>Jon</td>
+					<td>Mark</td>
+					<td>Annie</td>
+				</tr>
+				<tr>
+					<th bgcolor="fgfgfg">Take out the garbage</th>
+					<td>XXXX</td>
+					<td>Jon</td>
+					<td>XXXX</td>
+				</tr>
+			</table>
+		</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
