@@ -216,6 +216,33 @@ DOCTYPE html>
 		</p>
 		<h2>The scope attribute</h2>
 		<p>The scope attribute can be used with the &lt;th&gt element to indicate if a heading is for a row or a column, if the heading is for a row we put "row" in its value, if it is for a column, we put "col" in its value. It was done in the previous example.</p>
+		<h2>Spanning</h2>
+		<p>It is also possible to define how much rows or columns a cell will span. It is made using the rowspan attribute, for row spanning, or the colspan attribute, for column spanning. The value of it must be the number of rows or columns you want that cell to span.</p>
+		<p>Eg:
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th scope="column">7:00</th>
+						<th scope="column">8:00</th>
+						<th scope="column">9:00</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Channel 1</th>
+						<td colspan="2">Movie</td>
+						<td>Film review show</td>
+					</tr>
+					<tr>
+						<th scope="row">Channel 2</th>
+						<td colspan="2">Soccer match</td>
+						<td>Match review</td>
+					</tr>
+				</table>
+		</p>
+		<h2>Table Sectioning</h2>
+		<p>The elements &lt;thead&gt, &lt;tbody&gt and &lt;tfoot&gt, allows us to separate, and determine the different sections of the table. It also helps screen readers and us to stilize these sections more easily using CSS, according to the book. It was used on the previous example.</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
