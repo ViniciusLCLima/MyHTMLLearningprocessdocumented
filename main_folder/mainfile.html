@@ -322,6 +322,24 @@ DOCTYPE html>
 			</tfoot>
 		</table>
 		<hr />
+		<h1>Forms</h1>
+		<h2>Basic structure</h2>
+		<p>The basic structure of a form is made of the &lt;form&gt, which is made of an opening tag, a closing tag, and elements inside it, with the first characters of the tags being "form", and which will contain the form controls. It will always have an action attribute, which is going to tell where the values put in the forms and submitted will be sent to, with its value being an URL. The ID and the method attribute will usually be used too. The first to determine the method in which the values will be sent, if its value is get, the form values will be added to the URL of the action attribute, according to the book, it is used for short forms and forms that doesn't require any store or deletion of data, while if its value is "post" the form values will be sent via HTTP heads, it is more recommended if we are talking about long forms, or forms that send files, or sensitive data like passwords and that require the values sent to be stored in a database.</p>
+		<p>Like:
+		<form action="landingfileURL" method="get" id="form element">
+		This is a &lt;form&gt element. The form controls will be displayed here.
+		</form>
+		</p>
+		<h2>Input Element, type attribute, and text input</h2>
+		<p>The input element is an empty element, so it's just made of a tag, with its first characters being "input" and with a forward slash at the end of it. This element is used to display several different form controls, where the way to define which will be displayed is by adding a type attribute in it, with its value being the type of form control we want.</p>
+		<p>Like, to do a text input, we just have to create an input element inside a &gt;form&lt element, and add a type attribute to it, with the value of this being "text", if we want to limit the number of characters that can be put in it, we can add the maxlength attribute, with its value being the number of characters we want to limit. There was also used the size attribute to determine the size of the text box in the browser, with its value being the number of characters we want to fit in it, but, according to the book, it's now more recommended to use CSS for this purpose.</p>
+		<p>Eg:
+			<form action="landingfileURL" method="get" id="Input text">
+				<input name="myfirstcontrol" type="text" maxlength="5" size="5" />
+			</form>
+		</p>
+		<p> The book says the input element always must have a name attribute to identify what piece of information will be sent in it. So I have added it above.</p>
+		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
 </html>
