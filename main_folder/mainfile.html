@@ -346,6 +346,21 @@ DOCTYPE html>
 				<input type="password" name="password" maxlength="15" size="10" />
 			</form>
 		</p>
+		<h2>&lt;textarea&gt;</h2>
+		<p>The &lt;textarea&gt; element is a text box with multiple lines. Unlike the other two, it is not an empty element, and it's made of the usual syntax for elements, with the first characters of the tags being "textarea". Its content will be added to the text area box when the page loads. The rows and cols attributes can be added to it to determine, respectively, its height(in number of rows) and its width(in number of characters).</p>
+		<p>Like:
+		<form action="landingfileURL" method="get" id="text area form">
+		<textarea name="great text" rows="4" cols="20">It's the &lt;textarea&gt content</textarea>
+		</form>
+		<h2>The radio button</h2>
+		<p>The radion button is made of input elements inside a form element, one input element for each option given, with their type attribute values being "radio". The name attribute values of all inputs should be the same, value attributes should be added too, with different values for each of them, for the server to understand what kind of information it is and what option was chosen. It can also have a checked attribute with the value "checked" to define which option will be chosen when the page loads. Only one option can be selected at a time.</p>
+		<p>E.g.,
+			<form action="landingfileURL" method="get" id="radio button form">
+				Option 1<input type="radio" name="radio button" value="1" checked="checked" />
+				Option 2<input type="radio" name="radio button" value="2" />
+				Option 3<input type="radio" name="radio button" value="3" />
+			</form>
+		</p>
 		<hr />
 		Source: Duckett, J. (2011). HTML e CSS: design and build websites. J. Wiley & Sons
 	</body>
